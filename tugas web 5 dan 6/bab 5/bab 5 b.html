@@ -1,0 +1,96 @@
+<script>
+    var arrKosong = []; // array kosong tanpa data
+    var arrNegara = ["Indonesia", "Kanada", "amerika"]; // Array dengan data string
+    var arrAngka = [0, 3, 6, 7, 13, 28]; // Array dengan data numerik
+    var arrMixed = [1, 22, 48, "Nana", "Doni"]; // Array dengan data gabungan
+
+    // Deklarasi Array dengan penciptaan objek
+    var arrObject = new Array();
+    var arrObjNegara = new Array("China", "Jepang", "Korea");
+    var arrObjAngka = new Array(19, 29, 92, 90);
+    var arrObjMixed = new Array(182, 18, 8, "Danu", "Dana");
+
+    // Tampilkan Array
+    alert(arrKosong.toString());
+    alert(arrNegara.toString());
+    alert(arrAngka.toString());
+    alert(arrMixed.toString());
+    alert(arrObjNegara.toString());
+    alert(arrObjAngka.toString());
+    alert(arrObjMixed.toString());
+</script>
+
+<script>
+    var nilai = 0;
+    var arrData = [nilai + 1, nilai - 10, 2, 23, "Malang"];
+</script>
+
+<script>
+    var warna = [
+        ["putih", "merah", "hitam"],
+        ["hijau", "abu-abu", "biru"],
+    ];
+
+    // Tampilkan array
+    alert(warna[1][2].toString()); // Biru
+    alert(warna[0][1].toString()); // Merah
+</script>
+
+<script>
+    var arrNegara = ["Malaysia", "Inggris", "Jerman", "Belanda"];
+
+    // Tampilkan array ke 0
+    alert("Nilai Indeks ke 0: " + arrNegara[0].toString());
+
+    // Pemberian nilai pada array ke 0
+    arrNegara[0] = "Indonesia";
+
+    // Tampilkan array ke 0
+    alert("Nilai indeks ke 0: " + arrNegara[0].toString());
+</script>
+
+<script>
+    var arrNegara = ["Indonesia", "Malaysia", "Korea", "Jepang"];
+    alert(arrNegara.toString()); // Indonesia, Malaysia, Korea, Jepang
+    alert(arrNegara.length);     // 4
+</script>
+
+<script>
+    var arrNegara = ["Indonesia", "Malaysia", "Korea", "Jepang"];
+    alert(arrNegara.toString()); // Indonesia, Malaysia, Korea, Jepang
+    delete arrNegara[1];         // Menghapus "Malaysia"
+    alert(arrNegara[1]);         // undefined
+    alert(arrNegara.length);     // 4
+</script>
+
+<script>
+    var arrNegara = ["Indonesia", "Malaysia", "Inggris", "Jerman"];
+    for (var i = 0; i <= arrNegara.length - 1; i++) {
+        alert(arrNegara[i].toString());
+    }
+</script>
+
+<html>
+<head>
+</head>
+<body>
+<script>
+    var dataArray = [];
+    dataArray = [23, 100, 53, 99, 11];
+    var pjg_array = dataArray.length;
+    var dummy;
+
+    alert("Data Array awal " + dataArray.toString());
+    for (var i = 0; i < pjg_array; i++) {
+        for (var j = 0; j < pjg_array; j++) {
+            if (dataArray[j] > dataArray[i]) {
+                dummy = dataArray[j];
+                dataArray[j] = dataArray[i];
+                dataArray[i] = dummy;
+            }
+        }
+    }
+    alert("Data Array setelah disortir " + dataArray.toString());
+</script>
+</body>
+</html>
